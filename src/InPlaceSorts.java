@@ -23,18 +23,20 @@ public class InPlaceSorts {
             curPos++;
         }
     }
-    public static void BubbleSort(String[]arr){
-
-        for (int i=0; i<arr.length-1; i++)
-        {
-            for (int j = 0; j < arr.length - i -1 ; j++)
-            {
-                if (arr[j].compareTo(arr[j+1])<0)
-                {
-                    swap(arr, i, j);
+    public static void BubbleSort(String[] arr){
+        int x = arr.length-1;
+        int stop;
+        int swaps = 1;
+        while(swaps>0){
+            swaps = 0;
+            stop = x;
+            for(int i = 0;i<stop;i++){
+                if(arr[i].compareTo(arr[i+1])<0){
+                    swap(arr,i,i+1);
+                    swaps++;
+                    x = i;
                 }
             }
-
         }
     }
 
