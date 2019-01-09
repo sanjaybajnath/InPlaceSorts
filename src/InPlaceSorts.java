@@ -8,13 +8,13 @@ public class InPlaceSorts {
     public static void SelectionSort (String[] arr){
         int curPos = 0;
         int minPos = 0;
-        int minValue = arr[curPos];
+        String minValue = arr[curPos];
         while(curPos<arr.length){
             minPos = curPos;
             minValue = arr[curPos];
             for(int i = curPos +1;i<arr.length;i++){
 
-                if(arr[i]<minValue){
+                if(arr[i].compareTo(minValue)<0){
                     minValue = arr[i];
                     minPos = i;
                 }
@@ -23,4 +23,6 @@ public class InPlaceSorts {
             curPos++;
         }
     }
+
+
 }
