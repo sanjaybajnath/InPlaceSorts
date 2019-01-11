@@ -20,18 +20,18 @@ public class Runner {
         String[] s1 = randomStringArr(3,10);
         String[] s2 = InPlaceSorts.copyStringArray(s1);
         InPlaceSorts.BubbleSort(s1);
-        System.out.println("IsSorted: "+ InPlaceSorts.isSorted(s1));
+        System.out.println("BubbleSort IsSorted: "+ InPlaceSorts.isSorted(s1));
 
         String[] s3 = randomStringArr(3,10);
         String[] s4 = InPlaceSorts.copyStringArray(s3);
         InPlaceSorts.SelectionSort(s3);
-        System.out.println("IsSorted: "+ InPlaceSorts.isSorted(s3));
+        System.out.println("SelectionSort IsSorted: "+ InPlaceSorts.isSorted(s3));
 
 
         String[] s5 = randomStringArr(3,10);
         String[] s6 = InPlaceSorts.copyStringArray(s5);
         InPlaceSorts.InsertionSort(s5);
-        System.out.println("IsSorted: "+ InPlaceSorts.isSorted(s5));
+        System.out.println("InsertionSort IsSorted: "+ InPlaceSorts.isSorted(s5));
 
     }
 
