@@ -16,7 +16,15 @@ public class Runner {
     return arr;
     }
     public static void main(String[] args){
+        String[] s1 = randomStringArr(3,10);
+        String[] s2 = InPlaceSorts.copyStringArray(s1);
 
+        String[] s3 = randomStringArr(3,10);
+        String[] s4 = InPlaceSorts.copyStringArray(s3);
+
+        String[] s5 = randomStringArr(3,10);
+        String[] s6 = InPlaceSorts.copyStringArray(s5);
 
     }
+
 }

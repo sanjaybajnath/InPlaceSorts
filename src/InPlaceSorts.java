@@ -52,5 +52,13 @@ public class InPlaceSorts {
         }
     }
 
+    public static String[] copyStringArray(String[]s){
+        String[] copy = new String[s.length];
+        for(int i = 0;i<s.length;i++){
+            copy[i] = s[i];
+        }
+        return copy;
+    }
+
 
 }
