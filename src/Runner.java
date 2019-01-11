@@ -18,6 +18,8 @@ public class Runner {
     public static void main(String[] args){
         String[] s1 = randomStringArr(3,10);
         String[] s2 = InPlaceSorts.copyStringArray(s1);
+        InPlaceSorts.BubbleSort(s1);
+        System.out.println("IsSorted: "+ InPlaceSorts.isSorted(s1));
 
         String[] s3 = randomStringArr(3,10);
         String[] s4 = InPlaceSorts.copyStringArray(s3);
